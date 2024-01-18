@@ -17,8 +17,6 @@ import {
     zIndices,
 } from './tokens';
 
-export const NAVBAR_HEIGHT = '130px';
-export const NAVBAR_MOBILE_HEIGHT = '89px';
 export const {
     config,
     createTheme,
