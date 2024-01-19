@@ -1,6 +1,6 @@
 import { styled } from '../styles';
 
-export const InputField = styled('input', {
+export const Input = styled('input', {
     boxShadow: 'none',
     borderStyle: 'none',
     border: '1px solid',

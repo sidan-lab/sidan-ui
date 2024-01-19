@@ -1,9 +1,10 @@
 import { styled } from '../styles';
 
-export const Text = styled('div', {
+export const TextConfig = styled('div', {
     my: 'auto',
     textAlign: 'center',
     whiteSpace: 'nowrap',
+    color: '$primary',
 
     variants: {
         responsive: {
