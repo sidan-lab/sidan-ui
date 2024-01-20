@@ -3,15 +3,15 @@ export const Input = (styled: any) =>
         boxShadow: 'none',
         borderStyle: 'none',
         border: '1px solid',
-        textColor: '#666666',
-        background: 'white',
+        textColor: '$backgroundLight',
+        bg: '$text',
         p: ['12px 16px'],
         h: '100%',
         w: '100%',
         text: ['16px'],
         rounded: '10px',
         '&::placeholder': {
-            textColor: '#666666',
+            textColor: '$backgroundLight',
         },
         '&:hover': {
             outline: 'none',

@@ -1,7 +1,6 @@
 const families = {
     primary: 'Poppins, sans-serif',
     secondary: 'Inter, sans-serif',
-    mono: 'Roboto Mono, monospace',
 };
 
 const sizes = {

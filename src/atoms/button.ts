@@ -3,10 +3,9 @@ export const Button = (styled: any) =>
         display: 'flex',
         pos: 'relative',
         p: ['8px 20px'],
-        // bg: '$bgPrimary',
+        bg: '$primary',
         rounded: '$button',
-        fontFamily: '$primary',
-        gradient: '$primary',
+        fontFamily: '$text',
         justifyContent: 'center',
         cursor: 'pointer',
         borderStyle: 'none',
@@ -17,26 +16,16 @@ export const Button = (styled: any) =>
         variants: {
             style: {
                 primary: {
+                    color: '$text',
+                    bg: '$primary',
+                },
+                'gradient-primary': {
                     color: '$white',
                     gradient: '$gradient-primary-button',
                 },
                 secondary: {
-                    color: '$textOnSecondary',
-                    gradient: '$gradient-secondary-button',
-                },
-                'action-primary': {
-                    p: ['4px 16px'],
-                    color: '$white',
-                    gradient: '$gradient-primary-button',
-                    rounded: '$button-action',
-                    border: '1px solid $primary',
-                },
-                'action-secondary': {
-                    p: ['4px 16px'],
-                    color: '$textSecondary',
-                    bg: '$white',
-                    rounded: '$button-action',
-                    border: '1px solid $primary',
+                    color: '$text',
+                    gradient: '$secondary',
                 },
             },
             size: {
@@ -50,5 +39,20 @@ export const Button = (styled: any) =>
                     p: ['15px 25px'],
                 },
             },
+        },
+    });
+
+export const ButtonWrapper = (styled: any) =>
+    styled('div', {
+        display: 'flex',
+        justify: 'center',
+        alignItems: 'center',
+        width: 'fit-content',
+        gapX: ['8px'],
+        gapY: ['8px'],
+        cursor: 'pointer',
+        color: '$text',
+        '&:hover': {
+            opacity: '$hover',
         },
     });

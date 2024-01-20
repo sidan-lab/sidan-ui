@@ -3,42 +3,35 @@ export type ThemeTypes = 'dark' | 'light';
 const themes = {
     light: {
         primary: 'rgba(229, 141, 68, 1)',
-        secondary: 'rgba(25, 29, 28, 0.60)',
-        tertiary: 'rgba(206, 217, 216, 1)',
-        textPrimary: '#0D141E',
-        textSecondary: '#808080',
-        textTertiary: 'rgba(153, 153, 153, 1)',
-        textQuaternary: '#5C5C5C',
-        gain: '#3AA67B',
-        loss: '#D76D80',
+        primaryLight: 'rgba(229, 141, 68, 0.6)',
 
-        textOnPrimary: 'rgba(240, 249, 245, 1)',
-        textOnSecondary: 'rgba(85, 69, 69, 0.6)',
-        textOnTertiary: 'rgba(190, 182, 182, 1)',
+        secondary: 'rgba(40, 40, 80, 1.0)',
+        secondaryLight: 'rgba(40, 40, 80, 0.60)',
 
-        bgPrimary: 'rgba(245, 228, 216, 1)',
-        bgSecondary: '#585858',
-        bgTertiary: 'rgba(217, 217, 217, 1)',
+        accent: 'rgba(95, 194, 170, 1)',
+        accentLight: 'rgba(95, 194, 170, 0.6)',
 
-        inactiveSecondary: 'rgba(104, 106, 106, 1)',
-        inactiveTertiary: 'rgba(104, 106, 106, 1)',
+        text: 'rgba(255,255,255,1)',
+        textLight: 'rgba(255,255,255,0.6)',
+
+        background: 'rgba(0, 0, 0, 1)',
+        backgroundLight: 'rgba(0, 0, 0, 0.6)',
     },
     dark: {
-        primary: '#F09642',
-        textOnPrimary: '#FFFFFF',
-        textPrimary: '#D6D6D6',
-        textSecondary: '#7A7A7A',
-        textTertiary: '#666666',
-        textQuaternary: '#5C5C5C',
-        gain: '#3AA67B',
-        loss: '#D76D80',
+        primary: 'rgba(229, 141, 68, 1)',
+        primaryLight: 'rgba(229, 141, 68, 0.6)',
 
-        bgPrimary: 'rgba(75,72,72,0.56)',
-        bgSecondary: 'rgba(75,72,72,0.3)',
-        bgTertiary: '#E5E7EB',
+        secondary: 'rgba(40, 40, 80, 1.0)',
+        secondaryLight: 'rgba(40, 40, 80, 0.60)',
 
-        inactiveSecondary: 'rgba(104, 106, 106, 1)',
-        inactiveTertiary: 'rgba(104, 106, 106, 1)',
+        accent: 'rgba(95, 194, 170, 1)',
+        accentLight: 'rgba(95, 194, 170, 0.6)',
+
+        text: 'rgba(255,255,255,1)',
+        textLight: 'rgba(255,255,255,0.6)',
+
+        background: 'rgba(0, 0, 0, 1)',
+        backgroundLight: 'rgba(0, 0, 0, 0.6)',
     },
 };
 
@@ -223,23 +216,10 @@ const makePalette = (theme: ThemeTypes) => {
         gold800: 'hsl(36, 30%, 52.0%)',
         gold900: 'hsl(36, 26%, 40.0%)',
 
-        warning: '#AF1F42',
-        title: '#052822',
-        description: '#6B7D94',
-        'transaction-title': '#676F83',
-        'transaction-description': '#6F6E6D',
-        card: '#494D58',
-        'supreme-container': 'rgba(0, 0, 0, 0.99)',
-        'supreme-card': 'rgba(27, 33, 29, 0.8)',
-        'profile-transaction': 'rgba(73, 78, 83, 1)',
-
-        'status-green': '#79C681',
-        'status-red': '#FE7474',
-        'status-yellow': '#FFC266',
-
-        'bubble-cyan': '#B9E0D8',
-        'bubble-blue': 'rgba(67, 108, 255, 0.92)',
-        'bubble-violet': 'rgba(141, 142, 162, 1)',
+        danger: '#F44336',
+        warning: '#FF9800',
+        success: '#4CAF50',
+        info: '#2196F3',
     };
 
     return {

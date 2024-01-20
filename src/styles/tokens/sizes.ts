@@ -4,5 +4,4 @@ export const sizes = {
     'container-lg': '1170px',
     'container-xl': '1440px',
     'container-xxl': '2000px',
-    title: '40%',
 };

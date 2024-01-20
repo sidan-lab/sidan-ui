@@ -1,8 +1,9 @@
 export const Text = (styled: any) =>
     styled('div', {
-        my: 'auto',
+        width: '100%',
         textAlign: 'center',
         whiteSpace: 'nowrap',
+        fontFamily: '$primary',
 
         variants: {
             responsive: {
@@ -22,22 +23,22 @@ export const Text = (styled: any) =>
                 warning: {
                     text: ['14px'],
                     fontWeight: 400,
-                    color: '#FF9800',
+                    color: '$warning',
                 },
                 info: {
                     text: ['14px'],
                     fontWeight: 400,
-                    color: '#2196F3',
+                    color: '$info',
                 },
                 danger: {
                     text: ['14px'],
                     fontWeight: 400,
-                    color: '#F44336',
+                    color: '$danger',
                 },
                 success: {
                     text: ['14px'],
                     fontWeight: 400,
-                    color: '#04AA6D',
+                    color: '$success',
                 },
             },
         },

@@ -17,6 +17,7 @@ import {
     zIndices,
 } from './tokens';
 import { sidanAtoms } from '../atoms';
+import { sidanMolecules } from '../molecules';
 
 // TODO: Add types
 
@@ -81,7 +82,7 @@ export const instantiateSidanUI = (customThemeConfig: Partial<CustomThemeConfig>
 
     const darkTheme = createTheme({ colors: themeConfig.colors.dark });
 
-    const components = sidanAtoms(styled);
+    const components = { ...sidanAtoms(styled), ...sidanMolecules(styled, keyframes) };
 
     return {
         config,

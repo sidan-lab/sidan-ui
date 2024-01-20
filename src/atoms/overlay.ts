@@ -8,7 +8,7 @@ export const Overlay = (styled: any) =>
         display: 'flex',
         justify: 'center',
         items: 'center',
-        backdropFilter: 'blur(3px)',
+        backdropFilter: '$blur-sm',
         zIndex: 999,
         color: 'white',
     });
