@@ -1,7 +1,7 @@
 {
   "name": "@sidan-lab/sidan-ui",
   "description": "UI library from SIDAN Lab",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "Apache-2.0",
   "main": "dist/cjs/index.js",
   "module": "dist/mjs/index.js",
